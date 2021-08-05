@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/i"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="@color/black"
+    android:layout_marginTop="200dp"
+    android:layout_marginLeft="150dp"
+    ></ImageView>
+    <TextView
+        android:id="@+id/success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:text="You have been successfully registered for Palette"
+        android:textColor="@color/black"
+        android:layout_below="@+id/i"></TextView>
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let us set up your profile"
+        android:textSize="20dp"
+        android:layout_below="@+id/success"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        ></TextView>
+    <Button
+        android:id="@+id/cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:textAllCaps="false"
+        android:backgroundTint="#074EE8"
+        android:layout_below="@+id/textview1"></Button>
+</RelativeLayout>

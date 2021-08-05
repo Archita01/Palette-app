@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_marginTop="20dp"
+    android:id="@+id/welcome"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Welcome Harsh some sweet message"
+    android:textSize="25dp"
+    android:gravity="center"
+    android:textColor="@color/black"
+    ></TextView>
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Here are some suggestions for you"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/welcome"
+        android:textColor="@color/black"
+        android:textSize="20dp"></TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textview"
+        android:layout_marginTop="20dp"></androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>
