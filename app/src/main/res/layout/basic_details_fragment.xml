@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/skills"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Enter your skills* "
+        android:layout_marginBottom="10dp"
+        app:background="@color/white"
+        android:textColorHint="#767676"
+        app:boxStrokeColor="#767676"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/skillsInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:fontFamily="monospace"
+            android:textColor="@color/black"
+       />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/suggestion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suggestions"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:layout_below="@+id/skills"
+        android:layout_alignLeft="@+id/skills"/>
+
+    <Button
+        android:id="@+id/ui"
+        android:layout_width="50dp"
+        android:fontFamily="@font/montserrat"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/suggestion1"
+        android:layout_below="@+id/suggestion1"
+        android:text="UI"
+        android:textSize="32.25px"
+        android:background="@drawable/round"
+        app:backgroundTint="@color/black" />
+    <Button
+        android:id="@+id/ux"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/suggestion1"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/ui"
+        android:text="UX"
+        android:textSize="32.25px"
+        android:background="@drawable/round"
+        app:backgroundTint="@color/black" />
+    <Button
+        android:id="@+id/graphic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/suggestion1"
+        android:textAllCaps="false"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/montserrat"
+        android:layout_toRightOf="@+id/ux"
+        android:text="Graphic Designing"
+        android:textSize="32.25px"
+        android:background="@drawable/round"
+        app:backgroundTint="@color/black" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:fontFamily="@font/montserrat"
+        android:layout_below="@+id/suggestion1"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/graphic"
+        android:text="Product Design"
+        android:textSize="32.25px"
+        android:background="@drawable/round"
+        app:backgroundTint="@color/black" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tools"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Enter tools you use "
+        android:layout_below="@+id/ui"
+        android:layout_marginBottom="10dp"
+        app:background="@color/white"
+        android:textColorHint="#767676"
+        app:boxStrokeColor="#767676"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/toolsInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:fontFamily="monospace"
+            android:textColor="@color/black"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/suggestion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suggestions"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:layout_below="@+id/tools"
+        android:layout_alignLeft="@+id/tools"/>
+
+    <Button
+        android:id="@+id/figma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/suggestion2"
+        android:layout_alignLeft="@+id/suggestion2"
+        android:background="@drawable/round"
+        android:fontFamily="@font/montserrat"
+        android:text="Figma"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/black" />
+
+    <Button
+        android:id="@+id/adobe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/suggestion2"
+        android:layout_toRightOf="@+id/figma"
+        android:background="@drawable/round"
+        android:fontFamily="@font/montserrat"
+        android:text="Adobe XD"
+        android:textAllCaps="false"
+        android:textSize="32.25px"
+        app:backgroundTint="@color/black" />
+
+    <Button
+        android:id="@+id/sketch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/suggestion2"
+        android:layout_toRightOf="@+id/adobe"
+        android:background="@drawable/round"
+        android:fontFamily="@font/montserrat"
+        android:text="Sketch"
+        android:textAllCaps="false"
+        android:textSize="32.25px"
+        app:backgroundTint="@color/black" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:fontFamily="@font/montserrat"
+        android:layout_below="@+id/suggestion2"
+        android:layout_toRightOf="@+id/sketch"
+        android:text="Photoshop"
+        android:textSize="28px"
+        android:background="@drawable/round"
+        app:backgroundTint="@color/black" />
+
+    <Button
+        android:id="@+id/next1"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/sketch"
+        android:layout_alignLeft="@+id/sketch"
+        android:layout_marginTop="43dp"
+        android:backgroundTint="#074EE8"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textSize="18dp" />
+</RelativeLayout>

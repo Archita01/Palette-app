@@ -1,44 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textAlignment="inherit"
     app:cardCornerRadius="25dp"
     app:cardElevation="8dp"
     app:cardUseCompatPadding="true">
 
     <RelativeLayout
+        android:id="@+id/relative_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:id="@+id/relative_layout"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imag"
             android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:id="@+id/imag"/>
+            android:layout_height="50dp" />
 
         <TextView
             android:id="@+id/title"
-            android:layout_width="match_parent"
+            android:layout_width="155dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_toEndOf="@+id/imag"
             android:layout_toRightOf="@+id/imag"
+            android:fontFamily="@font/montserrat"
             android:text="Mathew John"
-           android:fontFamily="@font/montserrat"
             android:textColor="#000000"
             android:textSize="20dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invite to team"
+            android:textColor="#074EE8"
+            android:layout_toRightOf="@+id/title"
+            android:layout_alignParentEnd="true"
+            />
+
 
         <TextView
             android:id="@+id/skills"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/title"
+
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_toEndOf="@+id/imag"
@@ -46,6 +56,79 @@
             android:text="Skills: "
             android:textColor="@color/black"
             android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/ui"
+            android:layout_width="73dp"
+            android:layout_height="23dp"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:layout_alignTop="@+id/skills"
+            android:layout_toRightOf="@+id/skills"
+            android:background="@drawable/round"
+            android:textColor="@color/white"
+            android:text="UI Design"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:id="@+id/ux"
+            android:layout_width="73dp"
+            android:layout_height="23dp"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:layout_alignTop="@+id/ui"
+            android:layout_toRightOf="@+id/ui"
+            android:background="@drawable/round"
+            android:textColor="@color/white"
+            android:layout_marginLeft="5dp"
+            android:text="UX Design"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:id="@+id/graphic"
+            android:layout_width="78dp"
+            android:layout_height="28dp"
+            android:layout_alignTop="@+id/ux"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/ux"
+            android:background="@drawable/round"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Graphic Designing"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+        <TextView
+            android:id="@+id/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/skills"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/imag"
+            android:layout_toRightOf="@+id/imag"
+            android:text="Tools: "
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/photoshop"
+            android:layout_width="32dp"
+            android:layout_height="27dp"
+            android:layout_alignTop="@+id/tools"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/tools"
+            android:src="@drawable/photoshop"></ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_alignTop="@+id/photoshop"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/photoshop"
+            android:src="@drawable/ic_figma"></ImageView>
 
     </RelativeLayout>
 

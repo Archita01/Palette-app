@@ -7,8 +7,9 @@
     android:id="@+id/welcome"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Welcome Harsh some sweet message"
+    android:text="Welcome Harsh, some sweet message"
     android:textSize="25dp"
+    android:textStyle="bold"
     android:gravity="center"
     android:textColor="@color/black"
     ></TextView>
