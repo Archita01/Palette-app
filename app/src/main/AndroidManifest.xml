@@ -12,6 +12,7 @@
         <activity android:name=".profile"></activity>
         <activity android:name=".team_suggestion" />
         <activity android:name=".successs" />
+        <activity android:name=".Submission"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
